@@ -148,8 +148,11 @@ export default async function ProjectPage({
           managedProject={
             managedProject
           }
-          projectClient={
-            projectClient
+          supabaseUrl={
+            managedProject.supabase_url
+          }
+          supabaseAnonKey={
+            managedProject.supabase_anon_key
           }
         />
       );
@@ -160,8 +163,11 @@ export default async function ProjectPage({
           managedProject={
             managedProject
           }
-          projectClient={
-            projectClient
+          supabaseUrl={
+            managedProject.supabase_url
+          }
+          supabaseAnonKey={
+            managedProject.supabase_anon_key
           }
         />
       );
