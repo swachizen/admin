@@ -50,7 +50,7 @@ export default function DashboardPage() {
     useState("");
 
   const [view, setView] =
-    useState<ViewState>("dashboard");
+    useState<ViewState>("projects");
 
   const [submitting, setSubmitting] =
     useState(false);
