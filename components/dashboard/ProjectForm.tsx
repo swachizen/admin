@@ -14,7 +14,7 @@ import {
 
 import {
   ViewState,
-} from "@/app/dashboard/page";
+} from "@/types/dashboard.ts";
 
 type ProjectFormProps = {
   view: ViewState;
