@@ -24,7 +24,7 @@ import {
 import {
   Project,
   ViewState,
-} from "@/app/dashboard/page";
+} from "@/types/dashboard";
 
 type ProjectGridProps = {
   loading: boolean;
