@@ -1,3 +1,5 @@
 export type ViewState =
   | "contacts"
-  | "projects";
+  | "projects"
+  | "add-project"
+  | "edit-project";
