@@ -4,18 +4,14 @@ import { Plus } from "lucide-react";
 
 import LogoutButton from "./LogoutButton";
 
-type Props = {
-  view:
-    | "dashboard"
-    | "add-project"
-    | "edit-project";
+import type { ViewState } from "@/types/dashboard";
 
-  setView: (
-    view:
-      | "dashboard"
-      | "add-project"
-      | "edit-project"
-  ) => void;
+type DashboardHeaderProps = {
+  view: ViewState;
+
+  setView: React.Dispatch<
+    React.SetStateAction<ViewState>
+  >;
 };
 
 export default function DashboardHeader({
@@ -45,7 +41,7 @@ export default function DashboardHeader({
       </div>
 
       <div className="flex items-center gap-3">
-        {view === "dashboard" && (
+        {view === "projects" && (
           <button
             type="button"
             onClick={() =>
