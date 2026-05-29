@@ -19,6 +19,8 @@ import ProjectForm from "@/components/dashboard/ProjectForm";
 
 import ProjectGrid from "@/components/dashboard/ProjectGrid";
 
+import type { ViewState } from "@/types/dashboard";
+
 export type Project = {
   id: string;
 
@@ -36,11 +38,6 @@ export type Project = {
 
   created_at: string;
 };
-
-export type ViewState =
-  | "dashboard"
-  | "add-project"
-  | "edit-project";
 
 export default function DashboardPage() {
   const [projects, setProjects] =
