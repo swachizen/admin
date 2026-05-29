@@ -1,36 +1,205 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+Swaleh Universal Admin Platform
 
-## Getting Started
+Modern multi-project admin platform built with Next.js, Supabase, Tailwind CSS, and TypeScript.
 
-First, run the development server:
+Overview
 
-```bash
+This project is a scalable portfolio and dashboard system that supports:
+
+- Dynamic project dashboards
+- Portfolio management
+- Contact message management
+- Multi-project Supabase architecture
+- Image uploads with Supabase Storage
+- Responsive modern UI
+- Production-ready deployment setup
+
+---
+
+Tech Stack
+
+Frontend
+
+- Next.js 15
+- React 19
+- TypeScript
+- Tailwind CSS
+- Lucide React
+- React Hot Toast
+
+Backend
+
+- Supabase Database
+- Supabase Storage
+- Supabase Authentication
+- PostgreSQL
+
+Deployment
+
+- Vercel
+- Supabase
+
+---
+
+Features
+
+Portfolio Website
+
+- Responsive landing pages
+- Dynamic project showcase
+- Live demo links
+- Repository links
+- Contact form integration
+
+Dashboard
+
+- Dynamic project management
+- Image uploads
+- Screenshot galleries
+- Contact message viewer
+- Project CRUD operations
+
+Infrastructure
+
+- Row Level Security
+- Storage bucket policies
+- Optimized image delivery
+- Dynamic Supabase client architecture
+
+---
+
+Project Structure
+
+app/
+components/
+hooks/
+lib/
+public/
+types/
+
+---
+
+Environment Variables
+
+Create a ".env.local" file:
+
+NEXT_PUBLIC_SUPABASE_URL=your_supabase_url
+NEXT_PUBLIC_SUPABASE_ANON_KEY=your_supabase_anon_key
+
+---
+
+Installation
+
+npm install
+
+---
+
+Development
+
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Production Build
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+npm run build
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+Deployment
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Vercel
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Deploy frontend using Vercel:
 
-## Deploy on Vercel
+https://vercel.com
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Supabase
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Backend infrastructure:
+
+https://supabase.com
+
+---
+
+Supabase Setup
+
+Run SQL setup files inside the Supabase SQL Editor:
+
+- contacts table
+- projects table
+- storage policies
+- row level security policies
+
+---
+
+Storage Buckets
+
+Bucket used:
+
+projects
+
+Public bucket for optimized project asset delivery.
+
+---
+
+Security
+
+Implemented:
+
+- Row Level Security
+- Protected admin actions
+- Storage access policies
+- Public read controls
+- Authenticated mutation controls
+
+---
+
+Image Uploads
+
+Supports:
+
+- Cover images
+- Project screenshots
+- Multiple image uploads
+- Supabase Storage integration
+
+---
+
+SEO
+
+Includes:
+
+- sitemap.ts
+- robots.ts
+- metadata support
+- Open Graph support
+- optimized image rendering
+
+---
+
+Future Improvements
+
+- Admin authentication
+- Role based access control
+- Analytics dashboard
+- Activity logs
+- Real-time updates
+- Server actions
+- Image compression
+- Drag and drop uploads
+- Project editing workflows
+
+---
+
+License
+
+Private proprietary project.
+
+All rights reserved.
+
+---
+
+Author
+
+Developer Swaleh
