@@ -218,7 +218,7 @@ export default function DashboardPage() {
   function handleBack() {
     resetForm();
 
-    setView("dashboard");
+    setView("projects");
   }
 
   function handleCoverChange(
@@ -331,7 +331,7 @@ export default function DashboardPage() {
 
       resetForm();
 
-      setView("dashboard");
+      setView("projects");
 
       fetchProjects();
     } catch (error) {
@@ -393,7 +393,7 @@ export default function DashboardPage() {
 
       resetForm();
 
-      setView("dashboard");
+      setView("projects");
 
       fetchProjects();
     } catch (error) {
@@ -573,7 +573,7 @@ export default function DashboardPage() {
         )}
 
         {view ===
-          "dashboard" && (
+          "projects" && (
           <ProjectGrid
             loading={
               loading
