@@ -22,7 +22,7 @@ export type Project = {
 
   tech_stack: string[];
 
-  cover_image: string;
+  cover_photo: string;
 
   screenshots: string[];
 
