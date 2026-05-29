@@ -405,15 +405,15 @@ export default function DashboardPage() {
     );
 
     setLiveUrl(
-      project.live_url
+      project.live_url || ""
     );
 
     setSupabaseUrl(
-      project.supabase_url
+      project.supabase_url || ""
     );
 
     setSupabaseAnonKey(
-      project.supabase_anon_key
+      project.supabase_anon_key || ""
     );
 
     setCoverPreview(
