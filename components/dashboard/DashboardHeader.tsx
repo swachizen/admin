@@ -17,7 +17,7 @@ type DashboardHeaderProps = {
 export default function DashboardHeader({
   view,
   setView,
-}: Props) {
+}: DashboardHeaderProps) {
   return (
     <header className="mb-10 flex flex-col gap-6 border-b border-border pb-8 lg:flex-row lg:items-center lg:justify-between">
       <div>
