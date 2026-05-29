@@ -19,25 +19,7 @@ import ProjectForm from "@/components/dashboard/ProjectForm";
 
 import ProjectGrid from "@/components/dashboard/ProjectGrid";
 
-import type { ViewState } from "@/types/dashboard";
-
-export type Project = {
-  id: string;
-
-  title: string;
-
-  project_type: string;
-
-  cover_photo: string;
-
-  live_url: string;
-
-  supabase_url: string;
-
-  supabase_anon_key: string;
-
-  created_at: string;
-};
+import type { ViewState, Project } from "@/types/dashboard";
 
 export default function DashboardPage() {
   const [projects, setProjects] =
