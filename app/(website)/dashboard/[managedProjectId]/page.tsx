@@ -142,36 +142,6 @@ export default async function ProjectPage({
         />
       );
 
-    case "ecommerce":
-      return (
-        <EcommerceDashboard
-          managedProject={
-            managedProject
-          }
-          supabaseUrl={
-            managedProject.supabase_url
-          }
-          supabaseAnonKey={
-            managedProject.supabase_anon_key
-          }
-        />
-      );
-
-    case "saas":
-      return (
-        <SaasDashboard
-          managedProject={
-            managedProject
-          }
-          supabaseUrl={
-            managedProject.supabase_url
-          }
-          supabaseAnonKey={
-            managedProject.supabase_anon_key
-          }
-        />
-      );
-
     default:
       return (
         <main className="min-h-screen bg-background">
