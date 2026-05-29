@@ -12,6 +12,8 @@ export type Project = {
 
   slug: string;
 
+  project_type: string;
+
   short_description: string;
 
   problem_solved: string;
@@ -29,6 +31,12 @@ export type Project = {
   github_link: string;
 
   featured: boolean;
+
+  live_url?: string;
+
+  supabase_url?: string;
+
+  supabase_anon_key?: string;
 
   created_at: string;
 
